@@ -9,16 +9,21 @@ THREE COLUMNS
 */
 .columns {
 	background-color: grey;
-	position: float;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
 	width: 960px;
 }
 .columns p {
 	color: white;
 }
 article {
-	position: float;
-	margin: 20px 20px 15px 15px;
+	display: inline-block;
+	margin: 7px;
 	padding: 7px;
 	width: 30%;
 	background-color: blue;
+}
+article:hover {
+	background-color: black;
 }
