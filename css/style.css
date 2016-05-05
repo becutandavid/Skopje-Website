@@ -1,0 +1,16 @@
+body {
+	background-color: dark blue;
+	font-family: verdana;
+}
+/*
+========================
+THREE COLUMNS
+========================
+*/
+.columns {
+	background-color: grey;
+	position: float;
+}
+.colums p {
+	color: white;
+}
