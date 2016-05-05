@@ -9,7 +9,6 @@
 body{
 	width:100%;
 	margin:auto;
-	background:rgba(0,170,191,0.42);
 }
 
 .container{
@@ -25,7 +24,7 @@ body{
 	width: 100%;
 	color:white;
 	padding: 1px 8px;
-	margin: 5px;
+	margin: 0px 5px 5px 0px;
 }
 
 .logo{
@@ -65,9 +64,6 @@ a, a:visited, a:active{
 	color:inherit;	
 }
 
-a:hover{
-	color:color
-}
 
 
 /*
@@ -101,27 +97,6 @@ li{
 	padding:5px;
 	float:right;
 }
-
-/*
- 	Miscellaneous
-*/
-
-.CoA_Skopje{
-	margin:10px;
-	float:left;
-}
-
-
-
-
-/*
-	Test
-*/
-
-.test{
-		
-}
-
 
 
 
