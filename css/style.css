@@ -1,6 +1,14 @@
 body {
-	background-color: darkblue;
-	font-family: verdana;
+	background: -moz-linear-gradient(
+		bottom, 
+		white 5%, 
+		blue 75%
+	);
+    background: linear-gradient(
+    	bottom, 
+    	white 5%, 
+    	blue 75%
+    	);
 }
 /*
 ========================
@@ -8,11 +16,12 @@ THREE COLUMNS
 ========================
 */
 .columns {
-	background-color: grey;
+	background-color: white;
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
 	width: 960px;
+	font-family: Ariel;
 }
 .columns p, h2 {
 	color: white;
@@ -41,14 +50,40 @@ IMAGE MAINSECTION
 }
 .head-container {
 	width: 100%;
-	background-color: darkblue;
-    text-color: white;
-    margin-top: 100px;
+	background-color: blue;
+    color: white;
+    margin-top: 80px;
     position: absolute;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;;
+    /* fade towards edges */
+    
 }
-h1, nav {
-	display: inline-block;
+img {
+	z-index: -1;
 }
-nav {
-
+.head-container nav {
+  text-align: right;      
+  font-size: 14px;    
+  font-weight: 400;
+  letter-spacing: .5px; 
+  text-transform: uppercase;   
+}
+.head-container nav li {
+   display: inline-block;
+   margin: 0 auto;
+   vertical-align: top;
+}
+.head-container nav li:last-child {
+   margin-right: 200px;
+}
+.logo {
+  font-family: Days One;
+  float: left;                     
+  font-size: 40px;                 
+  line-height: 38px;               
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding-left: 200px;
 }
