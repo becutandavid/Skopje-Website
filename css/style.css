@@ -52,25 +52,22 @@ IMAGE MAINSECTION
 	width: 100%;
 	background-color: blue;
     color: white;
-    margin-top: 80px;
+    margin-top: 50px;
     position: absolute;
     border-top: 2px solid white;
     border-bottom: 2px solid white;;
     /* fade towards edges */
+    box-shadow: -40px 0px 20px 20px blue;
     
-}
-img {
-	z-index: -1;
 }
 .head-container nav {
   text-align: right;      
-  font-size: 14px;    
-  font-weight: 400;
+  font-size: 14px;
   letter-spacing: .5px; 
-  text-transform: uppercase;   
+  text-transform: uppercase;
+  display: inline-block;
 }
 .head-container nav li {
-   display: inline-block;
    margin: 0 auto;
    vertical-align: top;
 }
@@ -86,4 +83,7 @@ img {
   text-transform: uppercase;
   font-weight: 300;
   padding-left: 200px;
+}
+nav {
+	display: inline-block;
 }
