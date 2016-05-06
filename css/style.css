@@ -14,8 +14,11 @@ THREE COLUMNS
     padding-right: 30px;
 	width: 960px;
 }
-.columns p {
+.columns p, h2 {
 	color: white;
+}
+.columns h2 {
+	text-align: center;
 }
 article {
 	display: inline-block;
@@ -35,5 +38,17 @@ IMAGE MAINSECTION
 .mainsection {
 	width: 960px;
 	margin: 0 auto;
-	background-image: bg.jpg;
+}
+.head-container {
+	width: 100%;
+	background-color: darkblue;
+    text-color: white;
+    margin-top: 100px;
+    position: absolute;
+}
+h1, nav {
+	display: inline-block;
+}
+nav {
+
 }
