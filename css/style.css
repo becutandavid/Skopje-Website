@@ -27,3 +27,13 @@ article {
 article:hover {
 	background-color: black;
 }
+/*
+========================
+IMAGE MAINSECTION
+========================
+*/
+.mainsection {
+	width: 960px;
+	margin: 0 auto;
+	background-image: bg.jpg;
+}
