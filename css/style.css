@@ -16,7 +16,7 @@ THREE COLUMNS
 ========================
 */
 .columns {
-	background-color: white;
+/*	background-color: white; */
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
@@ -31,13 +31,17 @@ THREE COLUMNS
 }
 article {
 	display: inline-block;
-	margin: 7px;
-	padding: 7px;
+	margin-top: 10px;
+	margin-left: 7px;
+	padding-left: 10px;
 	width: 30%;
 	background-color: blue;
 }
 article:hover {
-	background-color: black;
+	background-color: lightblue;
+}
+article:hover p, article:hover h2 {
+	color: black;
 }
 /*
 ========================
@@ -66,10 +70,7 @@ IMAGE MAINSECTION
   letter-spacing: .5px; 
   text-transform: uppercase;
   display: inline-block;
-}
-.head-container nav li {
-   margin: 0 auto;
-   vertical-align: top;
+  margin: 0 auto;
 }
 .head-container nav li:last-child {
    margin-right: 200px;
@@ -86,4 +87,21 @@ IMAGE MAINSECTION
 }
 nav {
 	display: inline-block;
+	float: right;
+	padding-right: 100px;
+}
+nav a {
+	display: inline block;
+}
+/*                                           
+  ========================================   
+  Links                                      
+  ========================================   
+*/   
+a {
+	color: white;
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
 }
