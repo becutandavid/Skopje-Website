@@ -51,7 +51,7 @@ THREE COLUMNS
 }
 .grid-container .col2 {
 	margin-top: 10px;
-	display: inline-block;
+	display: float;
 	background-color: #293f50;
 	padding-left: 7px;
 }
