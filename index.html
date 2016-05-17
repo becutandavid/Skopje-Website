@@ -22,6 +22,10 @@
   <!-- link custom stylesheet -->
   <link rel = "stylesheet" type = "text/css" href = "css/style.css">
 
+  <!-- custom styles per resolution -->
+  <link rel='stylesheet' media='screen and (min-width: 992px)' href='/root/Skopje-Website/css/widescreen.css'>
+  <link rel='stylesheet' media='screen and (max-width: 991px)' href='/root/Skopje-Website/css/smallscreen.css'>
+
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -35,17 +39,19 @@
 
  <body>
  <!-- menu and logo-->
-  <header class="container">
-   <h1 class="logo"><a href="index.html">Skopje</a></h1>
-
-   <nav class="nav">   
-    <ul>
-     <li><a href="index.html">Home | </a></li>
-       <li><a href="events.html">Events | </a></li>
-       <li><a href="numbers.html">Numbers | </a></li>
+  <header>
+<!-- bellow nav classes are defined in bootstrap -->
+   <nav class = "navbar navbar-inverse navbar-fixed-top">  
+    <h1 class="navbar-nav"><a href="index.html">Skopje</a></h1> 
+<!-- bellow ul/nav classes are defined in bootstrap -->
+    <ul class="nav navbar-nav right">
+     <li><a href="index.html">Home</a></li>
+       <li><a href="events.html">Events</a></li>
+       <li><a href="numbers.html">Numbers</a></li>
        <li><a href="accomodation.html">Accomodation</a></li>
     </ul>
    </nav>
+
   </header>
  <!-- Main image -->
  <div class="mainsection">

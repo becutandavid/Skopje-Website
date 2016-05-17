@@ -1,17 +1,24 @@
+
+/* ----------------------------------
+main stylesheet (for all dimensions) 
+---------------------------------- */
+
 body {
-	background: -moz-linear-gradient(
-		bottom, 
-		white 5%, 
-		#293f50 75%
-	);
-    background: linear-gradient(
-    	bottom, 
-    	white 5%, 
-    	#293f50 75%
-    	);
+	font-family: ;
+	background-color: #293f50;
 }
-/*
-==========================================
-                BOOTSTRAP
-==========================================
-*/
+
+header {
+	font-family: Days One;
+	text-transform: capitalize;
+    list-style-type: none;
+}
+
+p, li {
+	color: rgb(230, 230, 255);
+}
+
+nav {
+	padding-left: 20px;
+	padding-top: 10px;
+}

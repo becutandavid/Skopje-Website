@@ -1,0 +1,9 @@
+/* --------------------------------------
+WIDESCREEN (above 992px width)
+
+natural form - no vertical stacking
+-------------------------------------- */
+
+body {
+	background-color: green;
+}
