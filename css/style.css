@@ -7,23 +7,18 @@ body {
 	font-family: ;
 	background-color: #293f50;
 }
-
 header {
 	font-family: Days One;
-	text-transform: capitalize;
-    list-style-type: none;
 }
-
 p, li {
 	color: rgb(230, 230, 255);
 }
 
 nav {
 	padding-top: 10px;
+	padding-right: 10%;
 }
 nav h1 {
 	padding-left: 15%;
-}
-nav ul {
-	padding-right: 10%;
+	text-shadow: 1px 1px black;
 }
