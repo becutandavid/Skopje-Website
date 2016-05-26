@@ -43,8 +43,11 @@
     <![endif]-->
 
    <!-- Enable collapsed menu button animation -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+   <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+   <!-- Custom scrollspy for navbar reaching bottom -->
+   <script type="text/javascript" src="script/scrollspy-custom.js"></script>
 
    <!-- Essentials for parallax effect -->
    <script type="text/javascript" src="script/index-parallax.js"></script>
@@ -59,7 +62,7 @@ navbar-inverse sets background color, otherwise transparent;
 navbar-fixed-top sets the element display to fixed and on top;
 navbar makes the elements inline;
 -->
-   <nav class = "navbar transparent navbar-inverse">
+   <nav id="nv" class = "navbar transparent navbar-inverse">
     <div class="container-fluid">
      <div class="navbar-header">
        <!-- Menu collapses into this button when width < 928px -->
@@ -104,50 +107,65 @@ CONTENT BLOCKS (CONTENT OVERLAYING BACKGROUND PARALLAX)
      <div class="content-space-two-events"></div>
 
      <div class="content-block-one cbo-two">
-         <!-- THREE COLUMNS -->
+
        <div class="container">
-         <div class="row">
 
-           <article class="col-md-3">
-                  <p>
-                  <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-                  <strong>7 MAY</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-           </article>
+        <div class="row">
+          <article class="col-md-9 col-sm-12">
+           <div class="row"><!-- inception -->
+             <article class="col-md-3 col-sm-4">
+                    <p>
+                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                    <strong>26 MAY</strong></br>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             </article>
 
-           <article class="col-md-3">
-                  <p>
-                  <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-                  <strong>7 MAY</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-           </article>
+             <article class="col-md-3 col-sm-4">
+                    <p>
+                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                    <strong>15 MAY</strong></br>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             </article>
 
-           <article class="col-md-3">
-                  <p>
-                  <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-                  <strong>7 MAY</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-           </article>
+             <article class="col-md-3 col-sm-4">
+                    <p>
+                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                    <strong>7 MAY</strong></br>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             </article>
+           </div> <!-- .row -->
+
+           <div class="row">
+
+             <article class="col-md-3 col-sm-4">
+                    <p>
+                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                    <strong>29 APRIL</strong></br> 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             </article>
+
+             <article class="col-md-3 col-sm-4">
+                    <p>
+                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                    <strong>6 MAR</strong></br> 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             </article>
+
+             <article class="col-md-3 col-sm-4">
+                    <p>
+                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                    <strong>22 FEB</strong></br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             </article>
+           </div> <!-- .row inception -->
+          </article> <!-- .col-md-9 -->
+
+          <article class="col-md-3 col-sm-4">
+          <p> lorem ipsum dolor sit amet, consecteur mit... </p>
+          </article>
 
          </div> <!-- .row -->
-         <div class="row">
 
-           <article class="col-md-3">
-                  <p>
-                  <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-                  <strong>7 MAY</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-           </article>
-
-           <article class="col-md-3">
-                  <p>
-                  <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-                  <strong>7 MAY</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-           </article>
-
-           <article class="col-md-3">
-                  <p>
-                  <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-                  <strong>7 MAY</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-           </article>
-
-         </div> <!-- .row -->
        </div> <!-- .container -->
      </div> <!-- .content-block-one -->
 
@@ -156,7 +174,7 @@ CONTENT BLOCKS (CONTENT OVERLAYING BACKGROUND PARALLAX)
  <!-- FOOTER WITH MENU
 ===========================================================================
  -->
-  <footer id="ftr" class="navbar-inverse">
+  <footer id="ftr" class="navbar-inverse" onpageshow="alert('hello')">
    <nav class = "navbar">
      <div class="container-fluid">
        <div class="navbar-collapse">

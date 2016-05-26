@@ -32,11 +32,13 @@
   <!-- custom styles per resolution -->
   <link rel='stylesheet' media='screen and (min-width: 992px)' href='css/widescreen.css'>
   <link rel='stylesheet' media='screen and (max-width: 991px)' href='css/smallscreen.css'>
+
   <!-- custom-made weather widget -->
   <link rel='stylesheet' href='css/weather.css'>
 
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <link href="css/ie10-viewport-bugfix.css" rel="stylesheet">
+
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -47,9 +49,14 @@
    <!-- Enable collapsed menu button animation -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+   <!-- Custom scrollspy for navbar reaching bottom -->
+   <script type="text/javascript" src="script/scrollspy-custom.js"></script>
+
    <!-- Custom weather widget -->
    <script type="text/javascript" src="script/weather.js"></script>
    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+   
    <!-- Essentials for parallax effect -->
    <script type="text/javascript" src="script/index-parallax.js"></script>
 
@@ -65,7 +72,7 @@ navbar-inverse sets background color, otherwise transparent;
 navbar-fixed-top sets the element display to fixed and on top;
 navbar makes the elements inline;
 -->
-   <nav class = "navbar transparent navbar-inverse">
+   <nav id="nv" class = "navbar transparent navbar-inverse">
     <div class="container-fluid">
      <div class="navbar-header">
        <!-- Menu collapses into this button when width < 928px -->
