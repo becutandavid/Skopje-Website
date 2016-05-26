@@ -214,6 +214,9 @@ h2 a:hover {
 
 .glyphicon-calendar {
 	font-size: 25px;
+}
+.col-sm-4 .glyphicon-calendar,
+.col-md-3 .glyphicon-calendar {
 	color: red;
 }
 .cbo-two strong{
