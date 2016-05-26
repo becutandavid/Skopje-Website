@@ -1,0 +1,20 @@
+#weather {
+  color: black;
+}
+#weather p.weather-date {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 10px 0px 0px 10px;
+  -moz-border-radius: 10px 0px 0px 10px;
+  -webkit-border-radius: 10px 0px 0px 10px;
+  display: inline-block;
+}
+#weather p.weather-temp {
+  background-color: grey;
+  border-radius: 0px 10px 10px 0px;
+  -moz-border-radius: 0px 10px 10px 0px;
+  -webkit-border-radius: 0px 10px 10px 0px;
+  padding: 11px;
+  display: inline-block;
+}
